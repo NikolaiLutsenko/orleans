@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Orleans", "Test.Orleans\Test.Orleans.csproj", "{70CF138E-525B-4C74-AC4B-4F0B32D82D84}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Orleans.Host", "Test.Orleans\Test.Orleans.Host.csproj", "{70CF138E-525B-4C74-AC4B-4F0B32D82D84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Orleans.Interfaces", "Test.Orleans.Interfaces\Test.Orleans.Interfaces.csproj", "{13D9D684-0374-414A-BA5B-7A7D87F3CE2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Orleans.Actors", "Test.Orleans.Actors\Test.Orleans.Actors.csproj", "{317DC7F4-A1FF-4632-9838-33161F607506}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Orleans.Client", "Test.Orleans.Client\Test.Orleans.Client.csproj", "{5363695C-85DF-4E43-9E95-FE9C65138BC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{70CF138E-525B-4C74-AC4B-4F0B32D82D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70CF138E-525B-4C74-AC4B-4F0B32D82D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70CF138E-525B-4C74-AC4B-4F0B32D82D84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13D9D684-0374-414A-BA5B-7A7D87F3CE2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13D9D684-0374-414A-BA5B-7A7D87F3CE2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13D9D684-0374-414A-BA5B-7A7D87F3CE2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13D9D684-0374-414A-BA5B-7A7D87F3CE2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{317DC7F4-A1FF-4632-9838-33161F607506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{317DC7F4-A1FF-4632-9838-33161F607506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{317DC7F4-A1FF-4632-9838-33161F607506}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{317DC7F4-A1FF-4632-9838-33161F607506}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5363695C-85DF-4E43-9E95-FE9C65138BC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5363695C-85DF-4E43-9E95-FE9C65138BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5363695C-85DF-4E43-9E95-FE9C65138BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5363695C-85DF-4E43-9E95-FE9C65138BC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

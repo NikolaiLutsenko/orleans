@@ -6,3 +6,10 @@
 /Test.Orleans/Test.Orleans/obj
 /Test.Orleans/.vs/Test.Orleans/v15
 /.vs
+/Test.Orleans/Test.Orleans.Actors/bin/Debug/netcoreapp2.1
+/Test.Orleans/Test.Orleans.Actors/obj/Debug/netcoreapp2.1
+/Test.Orleans/Test.Orleans.Actors/obj
+/Test.Orleans/Test.Orleans.Client/bin/Debug/netcoreapp2.1
+/Test.Orleans/Test.Orleans.Client/obj
+/Test.Orleans/Test.Orleans.Interfaces/bin/Debug/netcoreapp2.1
+/Test.Orleans/Test.Orleans.Interfaces/obj
