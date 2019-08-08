@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Test.Orleans/Test.Orleans/bin/Debug/netcoreapp2.1
+/Test.Orleans/Test.Orleans/obj
+/Test.Orleans/.vs/Test.Orleans/v15
+/.vs
