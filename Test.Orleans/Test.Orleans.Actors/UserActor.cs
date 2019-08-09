@@ -3,11 +3,12 @@ using Orleans;
 using System;
 using System.Threading.Tasks;
 using Test.Orleans.Actors.Interfaces;
+using Test.Orleans.Actors.States;
 using Test.Orleans.Interfaces;
 
 namespace Test.Orleans.Actors
 {
-	public class UserActor : Grain, IUserActor
+	public class UserActor : Grain<UserState>, IUserActor
 	{
 		private readonly ILogger<UserActor> _logger;
 		private readonly IUserRepo _userRepo;
@@ -19,12 +20,12 @@ namespace Test.Orleans.Actors
 			_userRepo = userRepo;
 		}
 
-		public Task<string> SayAsync(string msg)
+		public async Task SayAsync(string msg)
 		{
-			_userRepo.Call();
-			var testMsg = $"Hi, my id is [{primaryKey}] and I'm talking about {msg}";
-			_logger.LogInformation(testMsg);
-			return Task.FromResult(testMsg);
+			State.CallNumber++;
+			await this.WriteStateAsync();
+			await _userRepo.CallAsync();
+			_logger.LogInformation($"Hi, my id is [{primaryKey}], it's call number [{State.CallNumber}] and I'm talking about {msg}");
 		}
 
 		public override Task OnActivateAsync()

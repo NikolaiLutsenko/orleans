@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
-using System;
+using System.Threading.Tasks;
 using Test.Orleans.Interfaces;
 
 namespace Test.Orleans.Services
@@ -13,9 +13,10 @@ namespace Test.Orleans.Services
 			_logger = logger;
 		}
 
-		public void Call()
+		public Task CallAsync()
 		{
 			_logger.LogInformation("Call");
+			return Task.CompletedTask;
 		}
 	}
 }

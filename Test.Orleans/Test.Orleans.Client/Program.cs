@@ -58,9 +58,11 @@ namespace Test.Orleans.Client.Host
 		private static async Task DoClientWork(IClusterClient client)
 		{
 			// example of calling grains from the initialized client
-			var friend = client.GetGrain<IUserActor>(Guid.NewGuid());
-			var response = await friend.SayAsync("Good morning, HelloGrain!");
-			Console.WriteLine("\n\n{0}\n\n", response);
+			var userId = Guid.NewGuid();
+			var firstCall = client.GetGrain<IUserActor>(userId);
+			var secondCall = client.GetGrain<IUserActor>(userId);
+			await firstCall.SayAsync("Good morning, HelloGrain!");
+			await secondCall.SayAsync("Good morning, HelloGrain2!");
 		}
 	}
 }

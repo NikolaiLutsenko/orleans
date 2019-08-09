@@ -39,6 +39,7 @@ namespace Test.Orleans
 			// define the cluster configuration
 			var builder = new SiloHostBuilder()
 				.UseLocalhostClustering()
+				.AddMemoryGrainStorageAsDefault()
 				.Configure<ClusterOptions>(options =>
 				{
 					options.ClusterId = "dev";

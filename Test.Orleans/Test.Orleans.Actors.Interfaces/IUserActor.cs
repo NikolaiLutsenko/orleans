@@ -5,6 +5,6 @@ namespace Test.Orleans.Actors.Interfaces
 {
 	public interface IUserActor: IGrainWithGuidKey
 	{
-		Task<string> SayAsync(string msg);
+		Task SayAsync(string msg);
 	}
 }
