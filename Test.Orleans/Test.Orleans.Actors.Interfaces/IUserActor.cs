@@ -1,7 +1,7 @@
 ﻿using Orleans;
 using System.Threading.Tasks;
 
-namespace Test.Orleans.Interfaces
+namespace Test.Orleans.Actors.Interfaces
 {
 	public interface IUserActor: IGrainWithGuidKey
 	{

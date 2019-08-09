@@ -13,3 +13,10 @@
 /Test.Orleans/Test.Orleans.Client/obj
 /Test.Orleans/Test.Orleans.Interfaces/bin/Debug/netcoreapp2.1
 /Test.Orleans/Test.Orleans.Interfaces/obj
+/Test.Orleans/.vs/Test.Orleans
+/Test.Orleans/Test.Orleans.Actors.Interfaces/bin/Debug/netcoreapp2.1
+/Test.Orleans/Test.Orleans.Actors.Interfaces/obj/Debug/netcoreapp2.1
+/Test.Orleans/Test.Orleans.Actors.Interfaces/obj/Release/netcoreapp2.1
+/Test.Orleans/Test.Orleans.Actors.Interfaces/obj
+/Test.Orleans/Test.Orleans.Services/bin/Debug/netcoreapp2.1
+/Test.Orleans/Test.Orleans.Services/obj

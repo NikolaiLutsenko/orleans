@@ -3,7 +3,8 @@ using Orleans.Configuration;
 using System;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
-using Test.Orleans.Interfaces;
+using Test.Orleans.Actors.Interfaces;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Test.Orleans.Client.Host
 {
@@ -18,7 +19,8 @@ namespace Test.Orleans.Client.Host
 		{
 			try
 			{
-				using (var client = await ConnectClient())
+				var services = new ServiceCollection();
+				using (var client = await GetConnectClient())
 				{
 					await DoClientWork(client);
 					Console.ReadKey();
@@ -36,10 +38,9 @@ namespace Test.Orleans.Client.Host
 			}
 		}
 
-		private static async Task<IClusterClient> ConnectClient()
+		private static async Task<IClusterClient> GetConnectClient()
 		{
-			IClusterClient client;
-			client = new ClientBuilder()
+			var client = new ClientBuilder()
 				.UseLocalhostClustering()
 				.Configure<ClusterOptions>(options =>
 				{

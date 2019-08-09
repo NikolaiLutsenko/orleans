@@ -6,14 +6,15 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.2.0" />
-    <PackageReference Include="Microsoft.Orleans.CodeGenerator.MSBuild" Version="2.3.6">
+    <PackageReference Include="Microsoft.Orleans.CodeGenerator.MSBuild" Version="2.4.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.Orleans.Core.Abstractions" Version="2.3.6" />
+    <PackageReference Include="Microsoft.Orleans.Core.Abstractions" Version="2.4.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Test.Orleans.Actors.Interfaces\Test.Orleans.Actors.Interfaces.csproj" />
     <ProjectReference Include="..\Test.Orleans.Interfaces\Test.Orleans.Interfaces.csproj" />
   </ItemGroup>
 
