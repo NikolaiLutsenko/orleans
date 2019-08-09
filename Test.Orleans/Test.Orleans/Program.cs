@@ -5,6 +5,7 @@ using System;
 using System.Threading.Tasks;
 using Test.Orleans.Actors;
 using Microsoft.Extensions.Logging;
+using Test.Orleans.Host.IoC;
 
 namespace Test.Orleans
 {
@@ -44,7 +45,8 @@ namespace Test.Orleans
 					options.ServiceId = "OrleansBasics";
 				})
 				.ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(UserActor).Assembly).WithReferences())
-				.ConfigureLogging(logging => logging.AddConsole());
+				.ConfigureLogging(logging => logging.AddConsole())
+				.ConfigureServices(Module.ConfigureHost);
 
 			var host = builder.Build();
 			await host.StartAsync();
