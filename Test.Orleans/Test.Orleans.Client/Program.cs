@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Test.Orleans.Actors.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
+using System.Net;
+using System.Globalization;
+using Orleans.Hosting;
 
 namespace Test.Orleans.Client.Host
 {
@@ -20,6 +23,7 @@ namespace Test.Orleans.Client.Host
 			try
 			{
 				var services = new ServiceCollection();
+				await Task.Delay(10000);
 				using (var client = await GetConnectClient())
 				{
 					await DoClientWork(client);
@@ -40,12 +44,17 @@ namespace Test.Orleans.Client.Host
 
 		private static async Task<IClusterClient> GetConnectClient()
 		{
+			var connectionString = "Data Source=10.0.77.1;Initial Catalog=OrleansCluster;User Id=SA;Password=Kolian12344321@;";
 			var client = new ClientBuilder()
-				.UseLocalhostClustering()
 				.Configure<ClusterOptions>(options =>
 				{
 					options.ClusterId = "dev";
 					options.ServiceId = "OrleansBasics";
+				})
+				.UseAdoNetClustering(options =>
+				{
+					options.ConnectionString = connectionString;
+					options.Invariant = "System.Data.SqlClient";
 				})
 				.ConfigureLogging(logging => logging.AddConsole())
 				.Build();
