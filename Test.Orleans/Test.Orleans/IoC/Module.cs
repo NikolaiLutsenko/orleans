@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Test.Orleans.Interfaces;
-using Test.Orleans.Services;
+using Study.Orleans.Interfaces;
+using Study.Orleans.Services;
 
-namespace Test.Orleans.Host.IoC
+namespace Study.Orleans.Host.IoC
 {
 	class Module
 	{

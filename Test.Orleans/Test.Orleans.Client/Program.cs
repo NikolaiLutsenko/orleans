@@ -3,15 +3,13 @@ using Orleans.Configuration;
 using System;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
-using Test.Orleans.Actors.Interfaces;
+using Study.Orleans.Actors.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
-using System.Net;
-using System.Globalization;
 using Orleans.Hosting;
 
-namespace Test.Orleans.Client.Host
+namespace Study.Orleans.Client.Host
 {
-	class Program
+    class Program
 	{
 		static int Main(string[] args)
 		{
@@ -23,7 +21,7 @@ namespace Test.Orleans.Client.Host
 			try
 			{
 				var services = new ServiceCollection();
-				await Task.Delay(10000);
+				await Task.Delay(5000);
 				using (var client = await GetConnectClient())
 				{
 					await DoClientWork(client);
@@ -44,7 +42,7 @@ namespace Test.Orleans.Client.Host
 
 		private static async Task<IClusterClient> GetConnectClient()
 		{
-			var connectionString = "Data Source=10.0.77.1;Initial Catalog=OrleansCluster;User Id=SA;Password=Kolian12344321@;";
+			var connectionString = "server=localhost;port=3306;database=OrleansCluster;uid=root;password=root";
 			var client = new ClientBuilder()
 				.Configure<ClusterOptions>(options =>
 				{
@@ -54,7 +52,7 @@ namespace Test.Orleans.Client.Host
 				.UseAdoNetClustering(options =>
 				{
 					options.ConnectionString = connectionString;
-					options.Invariant = "System.Data.SqlClient";
+					options.Invariant = "MySql.Data.MySqlClient";
 				})
 				.ConfigureLogging(logging => logging.AddConsole())
 				.Build();

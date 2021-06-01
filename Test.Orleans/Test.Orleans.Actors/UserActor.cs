@@ -2,11 +2,11 @@
 using Orleans;
 using System;
 using System.Threading.Tasks;
-using Test.Orleans.Actors.Interfaces;
-using Test.Orleans.Actors.States;
-using Test.Orleans.Interfaces;
+using Study.Orleans.Actors.Interfaces;
+using Study.Orleans.Actors.States;
+using Study.Orleans.Interfaces;
 
-namespace Test.Orleans.Actors
+namespace Study.Orleans.Actors
 {
 	public class UserActor : Grain<UserState>, IUserActor
 	{

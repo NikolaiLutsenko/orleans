@@ -1,17 +1,15 @@
 ﻿using Orleans;
 using Orleans.Configuration;
 using Orleans.Hosting;
-using Orleans.Providers;
-using Orleans.MultiCluster;
 using System;
 using System.Threading.Tasks;
-using Test.Orleans.Actors;
+using Study.Orleans.Actors;
 using Microsoft.Extensions.Logging;
-using Test.Orleans.Host.IoC;
+using Study.Orleans.Host.IoC;
 
-namespace Test.Orleans
+namespace Study.Orleans
 {
-	class Program
+    class Program
 	{
 		static int Main(string[] args)
 		{
@@ -38,10 +36,10 @@ namespace Test.Orleans
 
 		private static async Task<ISiloHost> StartSilo()
 		{
-			var connectionString = @"Data Source=10.0.77.1;Initial Catalog=OrleansCluster;User Id=SA;Password=Kolian12344321@;";
+			var connectionString = @"server=localhost;port=3306;database=OrleansCluster;uid=root;password=root";
 			// define the cluster configuration
 			
-			var invariant = "System.Data.SqlClient"; // for Microsoft SQL Server
+			var invariant = "MySql.Data.MySqlClient"; // for Microsoft SQL Server
 			var siloHostBuilder = new SiloHostBuilder();
 			siloHostBuilder.Configure<ClusterOptions>(options =>
 			 {
