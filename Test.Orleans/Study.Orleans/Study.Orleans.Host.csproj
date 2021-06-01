@@ -17,10 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Test.Orleans.Actors.Interfaces\Study.Orleans.Actors.Interfaces.csproj" />
-    <ProjectReference Include="..\Test.Orleans.Actors\Study.Orleans.Actors.csproj" />
-    <ProjectReference Include="..\Test.Orleans.Interfaces\Study.Orleans.Interfaces.csproj" />
-    <ProjectReference Include="..\Test.Orleans.Services\Study.Orleans.Services.csproj" />
+    <ProjectReference Include="..\Study.Orleans.Actors.Interfaces\Study.Orleans.Actors.Interfaces.csproj" />
+    <ProjectReference Include="..\Study.Orleans.Actors\Study.Orleans.Actors.csproj" />
+    <ProjectReference Include="..\Study.Orleans.Interfaces\Study.Orleans.Interfaces.csproj" />
+    <ProjectReference Include="..\Study.Orleans.Services\Study.Orleans.Services.csproj" />
   </ItemGroup>
 
 </Project>

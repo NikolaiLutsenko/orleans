@@ -21,7 +21,7 @@ namespace Study.Orleans.Client.Host
 			try
 			{
 				var services = new ServiceCollection();
-				await Task.Delay(5000);
+				await Task.Delay(10000);
 				using (var client = await GetConnectClient())
 				{
 					await DoClientWork(client);
