@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Test.Orleans.Interfaces\Test.Orleans.Interfaces.csproj" />
+    <ProjectReference Include="..\Test.Orleans.Interfaces\Study.Orleans.Interfaces.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,9 +1,8 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
-namespace Test.Orleans.Interfaces
+namespace Study.Orleans.Interfaces
 {
-	public interface IUserRepo
+    public interface IUserRepo
 	{
 		Task CallAsync();
 	}

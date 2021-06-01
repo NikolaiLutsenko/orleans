@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
-using Test.Orleans.Interfaces;
+using Study.Orleans.Interfaces;
 
-namespace Test.Orleans.Services
+namespace Study.Orleans.Services
 {
 	public class FakeUserRepo : IUserRepo
 	{
