@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29020.237
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Study.Orleans.Host", "Test.Orleans\Study.Orleans.Host.csproj", "{70CF138E-525B-4C74-AC4B-4F0B32D82D84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Study.Orleans.Host", "Study.Orleans\Study.Orleans.Host.csproj", "{70CF138E-525B-4C74-AC4B-4F0B32D82D84}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Study.Orleans.Actors.Interfaces", "Test.Orleans.Actors.Interfaces\Study.Orleans.Actors.Interfaces.csproj", "{13D9D684-0374-414A-BA5B-7A7D87F3CE2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Study.Orleans.Actors.Interfaces", "Study.Orleans.Actors.Interfaces\Study.Orleans.Actors.Interfaces.csproj", "{13D9D684-0374-414A-BA5B-7A7D87F3CE2F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Study.Orleans.Actors", "Test.Orleans.Actors\Study.Orleans.Actors.csproj", "{317DC7F4-A1FF-4632-9838-33161F607506}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Study.Orleans.Actors", "Study.Orleans.Actors\Study.Orleans.Actors.csproj", "{317DC7F4-A1FF-4632-9838-33161F607506}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Study.Orleans.Client", "Test.Orleans.Client\Study.Orleans.Client.csproj", "{5363695C-85DF-4E43-9E95-FE9C65138BC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Study.Orleans.Client", "Study.Orleans.Client\Study.Orleans.Client.csproj", "{5363695C-85DF-4E43-9E95-FE9C65138BC5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Study.Orleans.Interfaces", "Test.Orleans.Interfaces\Study.Orleans.Interfaces.csproj", "{B0F657C6-E31C-43F8-BF90-313C3B094414}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Study.Orleans.Interfaces", "Study.Orleans.Interfaces\Study.Orleans.Interfaces.csproj", "{B0F657C6-E31C-43F8-BF90-313C3B094414}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Study.Orleans.Services", "Test.Orleans.Services\Study.Orleans.Services.csproj", "{8A0D24D5-AF07-4871-8736-3BCD26CE091D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Study.Orleans.Services", "Study.Orleans.Services\Study.Orleans.Services.csproj", "{8A0D24D5-AF07-4871-8736-3BCD26CE091D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
