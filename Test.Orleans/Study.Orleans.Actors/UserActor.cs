@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Study.Orleans.Actors.Interfaces;
 using Study.Orleans.Actors.States;
 using Study.Orleans.Interfaces;
+using Study.Orleans.Actors.Interfaces.Models;
 
 namespace Study.Orleans.Actors
 {
